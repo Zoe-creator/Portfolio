@@ -15,7 +15,7 @@ margin-bottom: 20px;
 a{
   text-decoration: None;
   color: black;
-  font-size:20px;
+  /* font-size:20px; */
 }
 a:hover{
   font-size:22px;
@@ -75,18 +75,18 @@ nav{
   display: flex;
   flex-direction: row;
 position: relative;
-font-family: 'Lobster', cursive;
+font-family: 'Roboto', sans-serif;
 
 }
 nav *{
-  padding-right:10px;
-  margin:20px;
+  padding-right:5px;
+  margin:14px;
   text-decoration: none;
 color: rgb(0,0,0);
-letter-spacing: 5px;
+letter-spacing: 2px;
 }
 nav *:hover{
-font-size:20px;
+font-size:18px;
 color:rgb(0,0,0,0.5);
 }
 
