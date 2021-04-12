@@ -1,74 +1,85 @@
-// const img = ["Calendar",'Cultural-Food', 'collections',  'furniture']
-// const github=
 
-// img.forEach(each => {
-//   let projects = document.querySelector('.my-projects')
-//   const image = new Image();
-//   console.log(image)
-//   image.src = `./asset/${each}.png`
-//   image.alt = `${each}`
-//   projects.append(image)
 
-//   // const button =document.createElement('button')
-//   // console.log(button)
-//   const link = document.createElement('a')
-//   link.href = `https://github.com/Zoe-creator/${each}`
-//   console.log(link)
-//   // button.append(link)
-//   link.innerHTML = 'Github'
-//   projects.append(link)
-// })
-"use strict";
-let nodemailer = require('nodemailer');
+var express = require('express');
+var path = require('path');
+var app = express();
+var bodyParser = require('body-parser');
+var nodemailer = require("nodemailer");
+var smtpTransport = require('nodemailer-smtp-transport');
 
-// class User {
-//   constructor(firstName, lastName, email, message) {
-//   this.firstName = firstName;
-//   this.lastName = lastName;
-//   this.email = email;
-//   this.message = message;
-//   }
-// }
-let firstName=document.getElementById("firstName").value
-console.log(firstName)
-let lstName = document.getElementById(lastName).value
-let email = document.getElementById(email).value
-let message=document.getElementById("message")
+import {GMAIL_PASS,GMAIL_USER} from "./services/index"
 
-// async..await is not allowed in global scope, must use a wrapper
-async function main() {
-  // Generate test SMTP service account from ethereal.email
-  // Only needed if you don't have a real mail account for testing
-  let testAccount = await nodemailer.createTestAccount();
+const bodyParser = require('body-parser')
+app.use(bodyParser.urlencoded({extended: true}))
+app.set('port', 3000);
 
-  // create reusable transporter object using the default SMTP transport
-  let transporter = nodemailer.createTransport({
-    host: "smtp.ethereal.email",
-    port: 587,
-    secure: false, // true for 465, false for other ports
+// POST route from contact form
+app.post('/contact', (req, res) => {
+
+  // Instantiate the SMTP server
+  const smtpTrans = nodemailer.createTransport({
+    host: 'smtp.gmail.com',
+    port: 465,
+    secure: true,
     auth: {
-      user: testAccount.user, // generated ethereal user
-      pass: testAccount.pass, // generated ethereal password
-    },
-  });
+      user: GMAIL_USER,
+      pass: GMAIL_PASS
+    }
+  })
 
-  // send mail with defined transport object
-  let info = await transporter.sendMail({
-    from: email, // sender address
-    to: "zoeli0204@gmail.com", // list of receivers
-    firstName: firstName, // Subject line
-   lastName: lastName, // plain text body
-    message:message
-  });
+  // Specify what the email will look like
+  const mailOpts = {
+    from: 'Your sender info here', // This is ignored by Gmail
+    to: GMAIL_USER,
+    subject: 'New message from contact form at tylerkrys.ca',
+    text: `${req.body.firstName} ${req.body.lastName} (${req.body.email}) says: ${req.body.message}`
+  }
 
-  console.log("Message sent: %s", info.messageId);
-  // Message sent: <b658f8ca-6296-ccf4-8306-87d57a0b4321@example.com>
+  // Attempt to send the email
+  smtpTrans.sendMail(mailOpts, (error, response) => {
+    if (error) {
+      res.render('contact-failure') // Show a page indicating failure
+    }
+    else {
+      res.render('contact-success') // Show a page indicating success
+    }
+  })
+  res.redirect("/index.html");
+})
 
-  // Preview only available when sending through an Ethereal account
-  console.log("Preview URL: %s", nodemailer.getTestMessageUrl(info));
-  // Preview URL: https://ethereal.email/message/WaQKMgKddxQDoou...
-}
+// app.use(express.static(path.join(__dirname, 'public')));
 
-main().catch(console.error);
+// var server = app.listen(app.get('port'), function () {
+//   var port = server.address().port;
+//   console.log('Magic happens on port ' + port);
+// });
 
-document.getElementById("submit").addEventListener("click", main)
+// const smtpTrans = nodemailer.createTransport({
+//   host: 'smtp.gmail.com',
+//   port: 465,
+//   secure: true,
+//   auth: {
+//     user: GMAIL_USER,
+//     pass: GMAIL_PASS
+//   }
+
+// })
+
+// app.post('/send', function (req, res) {
+//   var mailOptions = {
+//     from: 'your sender info', // sender address
+//     to: GMAIL_USER, // list of receivers
+//     subject: 'Request', // Subject line
+//     text: `${req.body.firstName} ${req.body.lastName} (${req.body.email}) says: ${req.body.message}`
+//   };
+//   smtpTrans.sendMail(mailOptions, (error, response) => {
+//     if (error) {
+//       res.render('contact-failure') // Show a page indicating failure
+//     }
+//     else {
+//       res.render('contact-success') // Show a page indicating success
+//     }
+//   })
+
+//   res.redirect("/index.html");
+// });
