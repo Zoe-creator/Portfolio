@@ -1,24 +1,23 @@
 {
   "name": "porforlio",
   "version": "1.0.0",
-  "description": "",
+  "description": "personal porforlio",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npm run build"
+    "build": "..."
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Zoe-creator/porforlio.git"
   },
-  "author": "",
+  "author": "zoe",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Zoe-creator/porforlio/issues"
   },
-  "homepage": "https://github.com/Zoe-creator/porforlio#readme",
+  "homepage": "https://github.com/Zoe-creator/porforlio",
   "dependencies": {
-
     "nodemailer": "^6.5.0"
   }
 }
