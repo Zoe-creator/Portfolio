@@ -9,7 +9,7 @@ body{
   /* height:90vh; */
   width:100%;
 justify-items: center;
-margin: auto;
+/* margin: auto; */
 margin-bottom: 20px;
 }
 a{
@@ -32,6 +32,12 @@ a:hover{
   color:rgb(0,0,0,0.5);
  
 }
+/* .project-resource{
+  margin:auto;
+}
+.about-contact{
+  margin:auto;
+} */
 .section-title{
   width: 100%;
   color:rgb(0,0,0);
@@ -40,14 +46,14 @@ a:hover{
   background-image: linear-gradient(to right,rgb(0,0,0,0.8),rgb(0,0,0,0.5),rgb(0,0,0,0.2),rgb(255,255,255,0.2),rgb(255,255,255,0.5));
   padding-top:20px;
   padding-bottom: 20px;
-  letter-spacing: 5px;
+  letter-spacing: 3px;
   font-weight: 900;
   /* margin:auto; */
   /* font-family: 'Times Roman', cursive; */
 
 }
 #Porforlio, #Contact, #More, #About{
-width:90%;
+width:95%;
 align-items: center;
 }
 
@@ -126,7 +132,7 @@ form input,form textarea{
   flex-direction: row;
   flex-wrap: wrap;
   width:90%;
-  margin: 20px 10px 10px 10px;
+  margin: 0px 10px 10px 10px;
   justify-content: space-around;
   overflow-y: scroll;
   height:45vh;
