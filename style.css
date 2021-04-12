@@ -1,0 +1,179 @@
+body{
+  background-color: rgb(0,0,0,0.3);
+  width:100vw;
+}
+.main-section{
+  display: grid;
+  grid-template-columns: 1.5fr 3fr;
+  grid-template-rows: 1fr;
+  /* height:90vh; */
+  width:98%;
+justify-items: center;
+margin: auto;
+margin-bottom: 20px;
+}
+a{
+  text-decoration: None;
+  color: black;
+  font-size:20px;
+}
+a:hover{
+  font-size:22px;
+  color:rgb(0,0,0,0.5);
+ 
+}
+.resume-link{
+  font: size 18px;color:black;
+
+}
+
+.resume-link:hover{
+  font-size:22px;
+  color:rgb(0,0,0,0.5);
+ 
+}
+.section-title{
+  width: 100%;
+  color:rgb(0,0,0);
+  font-size: 30px;
+  text-align: center;
+  background-image: linear-gradient(to right,rgb(0,0,0,0.8),rgb(0,0,0,0.5),rgb(0,0,0,0.2),rgb(255,255,255,0.2),rgb(255,255,255,0.5));
+  padding-top:20px;
+  padding-bottom: 20px;
+  letter-spacing: 5px;
+  font-family: 'Pacifico', cursive;
+
+}
+#Porforlio, #Contact, #More, #About{
+width:90%;
+align-items: center;
+}
+
+#About div{
+  display: flex;
+  flex-direction:column ;
+  align-items: center;
+}
+
+.about-description{
+/* text-align: center; */
+  overflow-y: scroll;
+  height:50px;
+font-size:18px;
+padding:10px;
+font-family: 'Cormorant', serif;
+}
+nav{
+  display: flex;
+  flex-direction: row;
+position: relative;
+font-family: 'Lobster', cursive;
+
+}
+nav *{
+  padding-right:10px;
+  margin:20px;
+  text-decoration: none;
+color: rgb(0,0,0);
+letter-spacing: 5px;
+}
+nav *:hover{
+font-size:20px;
+color:rgb(0,0,0,0.5);
+}
+
+
+.profile-img{
+  width:200px;
+  height:200px;
+  border-radius: 50%;
+}
+a img{
+  width:300px;
+}
+
+#Contact img{
+  width:20px;
+  height:20px;
+}
+
+
+form{
+  display: flex;
+  flex-direction: column;
+  width:250px;
+align-items: center;
+margin: auto;
+
+}
+form input,form textarea{
+  display: flex;
+  width:100%;
+  margin-bottom: 10px;
+}
+
+.project-resource{
+  display: flex;
+  flex-direction: column;
+  width:100%;
+  /* margin-right: 0; */
+}
+
+.projects-display{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width:90%;
+  margin: 20px 10px 10px 10px;
+  justify-content: space-around;
+  overflow-y: scroll;
+  height:45vh;
+}
+.project{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ margin-bottom: 10px;
+}
+.project img{
+  margin-bottom: 10px;
+}
+.project img:hover{
+  transform: scale(1.1);
+}
+
+#More a{
+  text-decoration: none;
+  color: black;
+  font-size:20px;
+}
+
+#More a:hover{
+ font-size:22px;
+ color:rgb(0,0,0,0.5);
+
+}
+
+footer{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding-top:10px;
+  margin-top: 20px;
+  justify-content: center;
+  position: relative;
+  bottom:0;
+}
+footer *{
+padding-left: 10px;
+
+}
+footer img{
+  width:20px;
+  height:20px;
+  margin-top: 12px;
+}
+
+/* #Home{
+  float:right;
+} */
