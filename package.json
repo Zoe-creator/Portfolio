@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "CI= npm run build"
+
   },
   "repository": {
     "type": "git",
@@ -17,6 +19,7 @@
   },
   "homepage": "https://github.com/Zoe-creator/porforlio#readme",
   "dependencies": {
+    "build": "^0.1.4",
     "nodemailer": "^6.5.0"
   }
 }
