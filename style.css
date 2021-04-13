@@ -8,12 +8,7 @@ body{
   grid-template-rows: 1fr;
   width:100%;
   justify-items: center;
-  margin-bottom: 20px;
 }
-/* a{
-  text-decoration: None;
-  color: black;
-} */
 
 .resume-link{
   font-size:  18px;
@@ -27,7 +22,6 @@ button:hover{
 .resume-link:hover{
   font-size:22px;
   color:rgb(0,0,0,0.5);
- 
 }
 
 .section-title{
@@ -40,9 +34,6 @@ button:hover{
   padding-bottom: 20px;
   letter-spacing: 3px;
   font-weight: 900;
-  /* margin:auto; */
-  /* font-family: 'Times Roman', cursive; */
-
 }
 #Porforlio, #Contact, #More, #About{
 width:95%;
@@ -73,7 +64,6 @@ nav *{
   padding-right:5px;
   margin-top:10px;
   margin-right:10px;
-  /* margin:14px; */
   text-decoration: none;
 color: rgb(0,0,0);
 letter-spacing: 2px;
@@ -102,7 +92,7 @@ a img{
 form{
   display: flex;
   flex-direction: column;
-  width:250px;
+  width:90%;
 align-items: center;
 margin: auto;
 
@@ -160,7 +150,7 @@ footer{
   flex-direction: row;
   width: 100%;
   padding-top:10px;
-  margin-top: 20px;
+  margin-top: 10px;
   justify-content: center;
   position: relative;
   bottom:0;
