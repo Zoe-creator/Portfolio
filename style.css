@@ -45,12 +45,18 @@ align-items: center;
   flex-direction:column ;
   align-items: center;
 }
+span{
+ font-weight: bolder;
 
+}
+.about-contact a{
+  margin-top: 10px;;
+}
 .about-description{
   overflow-y: scroll;
-  height:50px;
+  height:100px;
 font-size:18px;
-padding:10px;
+padding:0 10px 0 15px;
 font-family: 'Cormorant', serif;
 }
 nav{
@@ -75,8 +81,8 @@ color:rgb(0,0,0,0.5);
 
 
 .profile-img{
-  width:200px;
-  height:200px;
+  width:150px;
+  height:150px;
   border-radius: 50%;
 }
 a img{
