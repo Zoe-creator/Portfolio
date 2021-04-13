@@ -6,44 +6,36 @@ body{
   display: grid;
   grid-template-columns: 1.5fr 3fr;
   grid-template-rows: 1fr;
-  /* height:90vh; */
   width:100%;
-justify-items: center;
-/* margin: auto; */
-margin-bottom: 20px;
+  justify-items: center;
+  margin-bottom: 20px;
 }
-a{
+/* a{
   text-decoration: None;
   color: black;
-  /* font-size:20px; */
-}
-a:hover{
-  font-size:22px;
-  color:rgb(0,0,0,0.5);
- 
-}
+} */
+
 .resume-link{
-  font: size 18px;color:black;
+  font-size:  18px;
+  color:black;
+  text-decoration: None;
 
 }
-
+button:hover{
+  box-shadow:2px 4px 8px #686868 inset;
+}
 .resume-link:hover{
   font-size:22px;
   color:rgb(0,0,0,0.5);
  
 }
-/* .project-resource{
-  margin:auto;
-}
-.about-contact{
-  margin:auto;
-} */
+
 .section-title{
   width: 100%;
   color:rgb(0,0,0);
   font-size: 30px;
   text-align: center;
-  background-image: linear-gradient(to right,rgb(0,0,0,0.8),rgb(0,0,0,0.5),rgb(0,0,0,0.2),rgb(255,255,255,0.2),rgb(255,255,255,0.5));
+  background-image: linear-gradient(to right,rgb(0,0,0,0.8),rgb(0,0,0,0.5),rgb(0,0,0,0.2),rgb(255,255,255,0.2),rgb(255,255,255,0.5),rgb(255,255,255,0.2),rgb(0,0,0,0.2),rgb(0,0,0,0.5),rgb(0,0,0,0.8));
   padding-top:20px;
   padding-bottom: 20px;
   letter-spacing: 3px;
@@ -64,7 +56,6 @@ align-items: center;
 }
 
 .about-description{
-/* text-align: center; */
   overflow-y: scroll;
   height:50px;
 font-size:18px;
@@ -80,7 +71,9 @@ font-family: 'Roboto', sans-serif;
 }
 nav *{
   padding-right:5px;
-  margin:14px;
+  margin-top:10px;
+  margin-right:10px;
+  /* margin:14px; */
   text-decoration: none;
 color: rgb(0,0,0);
 letter-spacing: 2px;
