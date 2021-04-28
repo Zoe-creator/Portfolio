@@ -30,13 +30,13 @@ button:hover{
   font-size: 30px;
   text-align: center;
   background-image: linear-gradient(to right,rgb(0,0,0,0.8),rgb(0,0,0,0.5),rgb(0,0,0,0.2),rgb(255,255,255,0.2),rgb(255,255,255,0.5),rgb(255,255,255,0.2),rgb(0,0,0,0.2),rgb(0,0,0,0.5),rgb(0,0,0,0.8));
-  padding-top:20px;
-  padding-bottom: 20px;
-  letter-spacing: 3px;
+  padding-top:30px;
+  padding-bottom: 30px;
+  letter-spacing: 5px;
   font-weight: 900;
 }
 #Porforlio, #Contact, #More, #About{
-width:95%;
+width:98%;
 align-items: center;
 }
 
@@ -117,14 +117,24 @@ form input,form textarea{
 }
 
 .projects-display{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+
+  display: block;
   width:90%;
   margin: 0px 10px 10px 10px;
   justify-content: space-around;
   overflow-y: scroll;
   height:45vh;
+}
+.project:nth-child(1n){
+ flex-direction:row ;
+ margin-top: 0;
+  margin-bottom: 0;
+}
+.project:nth-child(2n){
+  background-color: rgb(153, 158, 158,0.4);
+  flex-direction: row-reverse;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .project{
   display: flex;
@@ -132,11 +142,15 @@ form input,form textarea{
   align-items: center;
  margin-bottom: 10px;
 }
-.project img{
-  margin-bottom: 10px;
-}
+
 .project img:hover{
   transform: scale(1.1);
+}
+.project-description button{
+ margin-left: 45%;
+}
+.project-description p{
+  margin: 0 10px 0 10px;;
 }
 
 #More a{
