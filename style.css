@@ -119,7 +119,7 @@ form input,form textarea{
 .projects-display{
 
   display: block;
-  width:90%;
+  width:95%;
   margin: 0px 10px 10px 10px;
   justify-content: space-around;
   overflow-y: scroll;
