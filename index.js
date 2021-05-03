@@ -31,7 +31,7 @@ const projects = [
 projects.forEach(project => {
   let projectContainer = document.querySelector(".projects-display")
   let eachProject = `<div class="project">
-  <a href=${project.img}  target="_blank">
+  <a href=${project.livingSite}  target="_blank">
   <img src=${project.img} alt=${project.title} > </a>
   <div class="project-description">
   <a href=${project.github} target="_blank"><button>Github</button></a>
