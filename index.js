@@ -4,7 +4,7 @@ const projects = [
     livingSite: "https://collection-forum.netlify.app/",
     img: "./asset/collections.png",
     github: "https://github.com/Zoe-creator/collections",
-    description: "It's a place allowing users to share their collections. It allows users to create accounts and post multiple posts with pictures, details, comments, and lets users 'like' other users posts!"
+    description: "It's a place allowing users to share their collections. It allows users to create accounts and post multiple posts with pictures, details, comments, and lets users 'like' other users posts."
   },
   {
     title: "Reventa",
@@ -25,7 +25,7 @@ const projects = [
     livingSite: "https://zoe-creator.github.io/Calendar/",
     img: "./asset/Calendar.png",
     github: "https://github.com/Zoe-creator/Calendar",
-    description: "This calendar displays all holidays and its description on corresponding days with external API."
+    description: "This calendar displays all holidays and its description on corresponding days with external API.(Javascript,CSS, HTML, Axios)"
   }
 ]
 projects.forEach(project => {
@@ -34,6 +34,7 @@ projects.forEach(project => {
   <a href=${project.livingSite}  target="_blank">
   <img src=${project.img} alt=${project.title} > </a>
   <div class="project-description">
+  
   <a href=${project.github} target="_blank"><button>Github</button></a>
   <p>${project.description}</p>
   </div>
