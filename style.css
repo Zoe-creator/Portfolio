@@ -184,24 +184,24 @@ font-family: 'Cormorant', serif;
 }
 nav{
   background-image: linear-gradient(to right,rgb(170, 189, 245),rgb(170, 189, 245,0.7),rgba(170, 189, 245, 0.5),rgb(170, 189, 245,0.2),rgb(170, 189, 245,0.5),rgb(170, 189, 245,0.7),rgb(170, 189, 245));
-padding:20px;
+padding:10px;
   display: flex;
   flex-direction: row;
 position: relative;
 font-family: 'Roboto', sans-serif;
-
 }
 nav *{
-  padding-right:5px;
-  /* margin-top:10px; */
-  margin-right:10px;
+  padding:10px;
+
   text-decoration: none;
 color: rgb(0,0,0);
 letter-spacing: 2px;
+
 }
 nav *:hover{
 font-size:18px;
 color:rgb(0,0,0,0.5);
+background-color: rgb(170,189,245);
 }
 
 
@@ -283,7 +283,7 @@ form input,form textarea{
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: space-between; */
+  /* justify-content:center; */
   width:60%;
 }
 .project-description a{
@@ -314,7 +314,6 @@ margin-bottom: 0;
 
 #More a:hover{
  color:rgb(170,189,240,0.5);
-
 }
 
 footer{
