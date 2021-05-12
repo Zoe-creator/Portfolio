@@ -34,7 +34,8 @@ projects.forEach(project => {
   <a href=${project.livingSite}  target="_blank">
   <img src=${project.img} alt=${project.title} > </a>
   <div class="project-description">
-  
+  <a  class="title-link" href=${project.livingSite}  target="_blank">
+  ${project.title} </a>
   <a href=${project.github} target="_blank"><button>Github</button></a>
   <p>${project.description}</p>
   </div>

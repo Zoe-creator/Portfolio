@@ -34,14 +34,10 @@ button:hover{
   flex-direction: row;
   align-items: center;
   position: relative;
-  /* justify-content: center; */
-    /* transform: translateX(0%); */
     height: 80vh;
     width:100%;
     background-image: url("./asset/background.jpeg");
-    /* opacity: 0.6; */
     background-size: cover;
-    /* margin-top: 20px; */
     margin-bottom: 0;
 }
 
@@ -131,7 +127,6 @@ margin:auto;
   letter-spacing: 5px;
   font-weight: 900;
   margin-top: 0;
-  /* margin-bottom: 30px; */
 }
 #Porforlio,#Contact,  #More, #About{
 width:100%;
@@ -145,7 +140,6 @@ justify-content: center;
 }
 span{
  font-weight: bolder;
-
 }
 
 .show-contact-info{
@@ -192,7 +186,6 @@ font-family: 'Roboto', sans-serif;
 }
 nav *{
   padding:10px;
-
   text-decoration: none;
 color: rgb(0,0,0);
 letter-spacing: 2px;
@@ -204,7 +197,6 @@ color:rgb(0,0,0,0.5);
 background-color: rgb(170,189,245);
 }
 
-
 .profile-img{
   width:150px;
   height:150px;
@@ -215,17 +207,14 @@ background-color: rgb(170,189,245);
   margin-top: 20px;;
 }
 
-
 .contact-me{
   width: 100%;
 }
-
 
 form{
   display: flex;
   flex-direction: column;
   width:80%;
-  /* max-width: 250px; */
 align-items: center;
 margin: auto;
 
@@ -236,10 +225,6 @@ form input,form textarea{
   margin-bottom: 10px;
 }
 
-
-/* #Portfolio{
-  width: 100%;
-} */
 .projects-display{
  display: block;
   width:100%;
@@ -283,7 +268,7 @@ form input,form textarea{
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content:center; */
+  justify-content:center;
   width:60%;
 }
 .project-description a{
@@ -293,20 +278,29 @@ margin-bottom: 10px;
 .project button{
   width: 100%;
 }
+.project .title-link{
+  width:40%;
+  text-align: center;
+text-decoration: none;
+font-size: 20px;
+padding:10px;
+color:black;
+
+}
+.project .title-link:hover{
+  color: rgb(170, 189, 245);
+  font-weight: bolder;
+  background-color: rgb(170, 189, 245,0.2);
+}
 .project-description p{
   margin: 0 10px 0 10px;
-  /* display: flex;
-  flex-direction: wrap; */
-
 }
 .continue-learning{
 font-size: 20px;
 margin-bottom: 0;
-/* padding:0 auto 0px 0; */
-  /* background-image: linear-gradient(to right,rgb(170, 189, 245),rgb(170, 189, 245,0.7),rgba(170, 189, 245, 0.5),rgb(170, 189, 245,0.2),rgb(170, 189, 245,0.5),rgb(170, 189, 245,0.7),rgb(170, 189, 245)); */
 }
-#More a{
 
+#More a{
   text-decoration: none;
   color: black;
   font-size:20px;
